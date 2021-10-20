@@ -85,7 +85,7 @@ class Board extends React.Component {
         const squares = current.squares.slice();
         const winInfo = calculateWinner(current.squares);
         const winner = winInfo.winner;
-        if (winner || squares[i]) {
+        if (winner || winInfo.isDraw || squares[i]) {
           return;
         }
         squares[i] = this.state.xIsNext ? 'X' : 'O';
@@ -270,7 +270,7 @@ class Board extends React.Component {
 
     let isDraw = true;
     for (let i = 0; i < squares.length; i++) {
-      if (squares[i] === null) {
+      if (squares[i] !== 'X' && squares[i] !== 'O') {
         isDraw = false;
         break;
       }
