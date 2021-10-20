@@ -199,7 +199,6 @@ class Board extends React.Component {
             }
           }
           if (win) {
-            //return squares[i];
             return {
               winner: squares[i],
               winLine: line,
@@ -220,7 +219,6 @@ class Board extends React.Component {
             }
           }
           if (win) {
-            //return squares[i];
             return {
               winner: squares[i],
               winLine: line,
@@ -241,7 +239,6 @@ class Board extends React.Component {
             }
           }
           if (win) {
-            //return squares[i];
             return {
               winner: squares[i],
               winLine: line,
@@ -262,7 +259,6 @@ class Board extends React.Component {
             }
           }
           if (win) {
-            //return squares[i];
             return {
               winner: squares[i],
               winLine: line,
@@ -284,8 +280,6 @@ class Board extends React.Component {
       line: null,
       isDraw: isDraw,
     };
-
-    //return null;
   }
   
   // ========================================
